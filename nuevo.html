@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Demo de sitio responsivo con boostrap</title>
+		<link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="includes/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header role="banner" class="container">
+			<h1>Encabezado</h1>
+
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="glyphicon glyphicon-th-large"></span>
+			</button>
+
+			<nav class="navbar-collapse collapse">
+				<ul class="navbar-nav nav">
+					<li>
+						<a href="#">Uno</a>
+					</li>
+					<li>
+						<a href="#">Dos</a>
+					</li>
+					<li>
+						<a href="#">Tres</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="body" class="container">
+			<aside class="col-md-3">
+				<button class="btn btn-default dropdown-toggle navbar-toggle" id="dropdownMenu1" data-toggle="dropdown">
+					Navegacion
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu navbar-toggle" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">Action</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">Another action</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">Something else here</a>
+					</li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">Separated link</a>
+					</li>
+				</ul>
+
+				<div class="navbar-collapse collapse">
+					Barra de navegacion
+				</div>
+			</aside>
+
+		 	<main role="main" class="col-md-9">
+					Contenido principal
+			</main>
+		</div>
+		
+		<footer class="container">
+			Pie de pagina
+		</footer>
+		<script src="includes/jquery/jquery-1.11.1.min.js"></script>
+		<script src="includes/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
